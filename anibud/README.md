@@ -1,4 +1,4 @@
-# anibud
+# anibud_ui
 
 A new Flutter project.
 
