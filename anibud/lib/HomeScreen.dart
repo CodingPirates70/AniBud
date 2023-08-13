@@ -1,7 +1,11 @@
+// ignore: file_names
 import 'package:anibud_ui/Vet_Hospitals/PetoptionScreen.dart';
+import 'package:anibud_ui/pet_finder/pet_finder_screen.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
+  const HomeScreen({super.key});
+
   @override
   State<StatefulWidget> createState() {
     return _HomeScreenState();
@@ -24,7 +28,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   Container(
                     width: w,
                     height: h / 3,
-                    color: Color(0xFFB4D5DC),
+                    color: const Color(0xFFB4D5DC),
                   ),
                   Positioned(
                     top: h / 3.5,
@@ -41,7 +45,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     left: w / 6,
                     top: h / 65,
                     child: Image(
-                      image: AssetImage('assets/images/figma animal.png'),
+                      image: const AssetImage('assets/images/figma animal.png'),
                       width: w / 1.5,
                     ),
                   ),
@@ -54,7 +58,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     width: w - 50,
                     height: h / 8 + 10,
                     decoration: BoxDecoration(
-                      color: Color(0xFF4DD01F),
+                      color: const Color(0xFF4DD01F),
                       borderRadius: BorderRadius.circular((w - 50) / 2),
                     ),
                   ),
@@ -74,12 +78,12 @@ class _HomeScreenState extends State<HomeScreen> {
                                       builder: (context) => FirstScreen()));
                             },
                             style: ElevatedButton.styleFrom(
-                              backgroundColor: Color(0xFF32BB53),
+                              backgroundColor: const Color(0xFF32BB53),
                             ),
-                            child: Row(
+                            child: const Row(
                               children: [
                                 Padding(
-                                  padding: const EdgeInsets.only(top: 28.0),
+                                  padding: EdgeInsets.only(top: 28.0),
                                   child: Column(
                                     children: [
                                       Text(
@@ -111,7 +115,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                   borderRadius:
                                       BorderRadius.circular((w - 50) / 2),
                                 ),
-                                child: Image(
+                                child: const Image(
                                   image: AssetImage(
                                     'assets/images/VethHospital.png',
                                   ),
@@ -124,7 +128,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 50,
               ),
               //button 2
@@ -134,7 +138,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     width: w - 50,
                     height: h / 8 + 10,
                     decoration: BoxDecoration(
-                      color: Color(0xFFDECB24),
+                      color: const Color(0xFFDECB24),
                       borderRadius: BorderRadius.circular((w - 50) / 2),
                     ),
                   ),
@@ -149,15 +153,15 @@ class _HomeScreenState extends State<HomeScreen> {
                           ElevatedButton(
                             onPressed: () {},
                             style: ElevatedButton.styleFrom(
-                              backgroundColor: Color(0xFFEDBC3F),
+                              backgroundColor: const Color(0xFFEDBC3F),
                             ),
                             child: Row(
                               children: [
                                 SizedBox(
                                   width: w / 3.3,
                                 ),
-                                Padding(
-                                  padding: const EdgeInsets.only(top: 25.0),
+                                const Padding(
+                                  padding: EdgeInsets.only(top: 25.0),
                                   child: Column(
                                     children: [
                                       Text(
@@ -189,7 +193,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                   borderRadius:
                                       BorderRadius.circular((w - 50) / 2),
                                 ),
-                                child: Image(
+                                child: const Image(
                                   image: AssetImage(
                                     'assets/images/VethHospital.png',
                                   ),
@@ -202,7 +206,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 50,
               ),
 
@@ -213,7 +217,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     width: w - 50,
                     height: h / 8 + 10,
                     decoration: BoxDecoration(
-                      color: Color(0xFF4DD01F),
+                      color: const Color(0xFF4DD01F),
                       borderRadius: BorderRadius.circular((w - 50) / 2),
                     ),
                   ),
@@ -226,14 +230,21 @@ class _HomeScreenState extends State<HomeScreen> {
                       child: Stack(
                         children: [
                           ElevatedButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => PetFindScreen(),
+                                ),
+                              );
+                            },
                             style: ElevatedButton.styleFrom(
-                              backgroundColor: Color(0xFF32BB53),
+                              backgroundColor: const Color(0xFF32BB53),
                             ),
-                            child: Row(
+                            child: const Row(
                               children: [
                                 Padding(
-                                  padding: const EdgeInsets.only(top: 28.0),
+                                  padding: EdgeInsets.only(top: 28.0),
                                   child: Column(
                                     children: [
                                       Text(
@@ -265,7 +276,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                   borderRadius:
                                       BorderRadius.circular((w - 50) / 2),
                                 ),
-                                child: Image(
+                                child: const Image(
                                   image: AssetImage(
                                     'assets/images/VethHospital.png',
                                   ),
@@ -279,7 +290,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ],
               ),
               //button 4
-              SizedBox(
+              const SizedBox(
                 height: 50,
               ),
               Stack(
@@ -288,7 +299,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     width: w - 50,
                     height: h / 8 + 10,
                     decoration: BoxDecoration(
-                      color: Color(0xFFDECB24),
+                      color: const Color(0xFFDECB24),
                       borderRadius: BorderRadius.circular((w - 50) / 2),
                     ),
                   ),
@@ -303,15 +314,15 @@ class _HomeScreenState extends State<HomeScreen> {
                           ElevatedButton(
                             onPressed: () {},
                             style: ElevatedButton.styleFrom(
-                              backgroundColor: Color(0xFFEDBC3F),
+                              backgroundColor: const Color(0xFFEDBC3F),
                             ),
                             child: Row(
                               children: [
                                 SizedBox(
                                   width: w / 3.3,
                                 ),
-                                Padding(
-                                  padding: const EdgeInsets.only(top: 25.0),
+                                const Padding(
+                                  padding: EdgeInsets.only(top: 25.0),
                                   child: Column(
                                     children: [
                                       Text(
@@ -343,7 +354,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                   borderRadius:
                                       BorderRadius.circular((w - 50) / 2),
                                 ),
-                                child: Image(
+                                child: const Image(
                                   image: AssetImage(
                                     'assets/images/VethHospital.png',
                                   ),

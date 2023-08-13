@@ -1,7 +1,4 @@
-
 import 'package:anibud_ui/HomeScreen.dart';
-import 'package:anibud_ui/Vet_Hospitals/MapScreen.dart';
-import 'package:anibud_ui/Vet_Hospitals/PetoptionScreen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,7 +14,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'AniBud',
-
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
