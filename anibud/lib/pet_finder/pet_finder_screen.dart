@@ -18,6 +18,7 @@ class _PetFindScreenState extends State<PetFindScreen> {
         height: double.infinity,
         child: Center(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               ElevatedButton(
                 onPressed: () {
@@ -39,7 +40,7 @@ class _PetFindScreenState extends State<PetFindScreen> {
                     ),
                   );
                 },
-                child: const Text("Upload your missing Pet"),
+                child: const Text("Upload the Pet found"),
               ),
             ],
           ),

@@ -1,8 +1,11 @@
+// ignore: file_names
 import 'package:anibud_ui/Vet_Hospitals/MapScreen.dart';
 import 'package:flutter/material.dart';
 //import 'package:anibud_ui/MapScreen.dart'
 
 class FirstScreen extends StatefulWidget {
+  const FirstScreen({super.key});
+
   @override
   State<StatefulWidget> createState() {
     return _FirstScreenState();
@@ -22,7 +25,7 @@ class _FirstScreenState extends State<FirstScreen> {
             Container(
               width: w,
               height: h / 3,
-              color: Color(0xFFB4D5DC),
+              color: const Color(0xFFB4D5DC),
             ),
             Positioned(
               top: h / 3.5,
@@ -43,9 +46,9 @@ class _FirstScreenState extends State<FirstScreen> {
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white.withOpacity(0.7),
-                    shape: CircleBorder(),
+                    shape: const CircleBorder(),
                   ),
-                  child: Icon(
+                  child: const Icon(
                     Icons.arrow_back,
                     size: 50,
                     color: Colors.white,
@@ -59,7 +62,7 @@ class _FirstScreenState extends State<FirstScreen> {
               width: w - 50,
               height: h / 8 + 10,
               decoration: BoxDecoration(
-                color: Color(0xFF4DD01F),
+                color: const Color(0xFF4DD01F),
                 borderRadius: BorderRadius.circular((w - 50) / 2),
               ),
             ),
@@ -76,17 +79,17 @@ class _FirstScreenState extends State<FirstScreen> {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => MapScreen(
+                                builder: (context) => const MapScreen(
                                       title: 'gee',
                                     )));
                       },
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: Color(0xFF32BB53),
+                        backgroundColor: const Color(0xFF32BB53),
                       ),
-                      child: Row(
+                      child: const Row(
                         children: [
                           Padding(
-                            padding: const EdgeInsets.only(top: 28.0),
+                            padding: EdgeInsets.only(top: 28.0),
                             child: Column(
                               children: [
                                 Text(
@@ -117,7 +120,7 @@ class _FirstScreenState extends State<FirstScreen> {
                             color: Colors.white,
                             borderRadius: BorderRadius.circular((w - 50) / 2),
                           ),
-                          child: Image(
+                          child: const Image(
                             image: AssetImage(
                               'assets/images/VethHospital.png',
                             ),
@@ -130,7 +133,7 @@ class _FirstScreenState extends State<FirstScreen> {
             ),
           ],
         ),
-        SizedBox(
+        const SizedBox(
           height: 50,
         ),
         Stack(
@@ -139,7 +142,7 @@ class _FirstScreenState extends State<FirstScreen> {
               width: w - 50,
               height: h / 8 + 10,
               decoration: BoxDecoration(
-                color: Color(0xFFDECB24),
+                color: const Color(0xFFDECB24),
                 borderRadius: BorderRadius.circular((w - 50) / 2),
               ),
             ),
@@ -156,20 +159,20 @@ class _FirstScreenState extends State<FirstScreen> {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => MapScreen(
+                                builder: (context) => const MapScreen(
                                       title: 'gee',
                                     )));
                       },
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: Color(0xFFEDBC3F),
+                        backgroundColor: const Color(0xFFEDBC3F),
                       ),
                       child: Row(
                         children: [
                           SizedBox(
                             width: w / 3.3,
                           ),
-                          Padding(
-                            padding: const EdgeInsets.only(top: 25.0),
+                          const Padding(
+                            padding: EdgeInsets.only(top: 25.0),
                             child: Column(
                               children: [
                                 Text(
@@ -200,7 +203,7 @@ class _FirstScreenState extends State<FirstScreen> {
                             color: Colors.white,
                             borderRadius: BorderRadius.circular((w - 50) / 2),
                           ),
-                          child: Image(
+                          child: const Image(
                             image: AssetImage(
                               'assets/images/VethHospital.png',
                             ),

@@ -1,8 +1,13 @@
+// ignore_for_file: depend_on_referenced_packages
 import 'package:anibud_ui/HomeScreen.dart';
+import "package:firebase_core/firebase_core.dart";
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 void main() {
-  runApp(const MyApp());
+  WidgetsFlutterBinding.ensureInitialized();
+  Firebase.initializeApp(); // Ensure Flutter is initialized
+  runApp(const MyApp()); // Run your app
 }
 
 class MyApp extends StatelessWidget {
