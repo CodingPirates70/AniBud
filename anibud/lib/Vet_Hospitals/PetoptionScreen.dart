@@ -96,7 +96,7 @@ class _FirstScreenState extends State<FirstScreen> {
                                   'PERSONAL PETS',
                                   style: TextStyle(
                                       color: Colors.white,
-                                      fontSize: 21,
+                                      fontSize: 20,
                                       fontWeight: FontWeight.w900),
                                 ),
                                 Text(
@@ -122,7 +122,7 @@ class _FirstScreenState extends State<FirstScreen> {
                           ),
                           child: const Image(
                             image: AssetImage(
-                              'assets/images/VethHospital.png',
+                              'assets/images/pet.png',
                             ),
                             fit: BoxFit.scaleDown,
                           )),
@@ -179,11 +179,11 @@ class _FirstScreenState extends State<FirstScreen> {
                                   'INJURED ANIMAL',
                                   style: TextStyle(
                                       color: Colors.white,
-                                      fontSize: 19,
+                                      fontSize: 15,
                                       fontWeight: FontWeight.w900),
                                 ),
                                 Text(
-                                  'For any animal in locality',
+                                  'For any animal in\n locality',
                                   style: TextStyle(
                                       color: Colors.white, fontSize: 12),
                                 )
@@ -205,7 +205,7 @@ class _FirstScreenState extends State<FirstScreen> {
                           ),
                           child: const Image(
                             image: AssetImage(
-                              'assets/images/VethHospital.png',
+                              'assets/images/injured.png',
                             ),
                             fit: BoxFit.scaleDown,
                           )),
