@@ -37,34 +37,34 @@ class _MapScreenState extends State<MapScreen> {
 
   final List<Marker> _markers = [
     Marker(
-      markerId: MarkerId('2'),
+      markerId: const MarkerId('2'),
       icon: BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueBlue),
-      position: LatLng(22.96855, 88.42959),
-      infoWindow: InfoWindow(title: 'Paws & tails pet clinic'),
+      position: const LatLng(22.96855, 88.42959),
+      infoWindow: const InfoWindow(title: 'Paws & tails pet clinic'),
     ),
     Marker(
-      markerId: MarkerId('3'),
+      markerId: const MarkerId('3'),
       icon: BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueBlue),
-      position: LatLng(22.98443, 88.43602),
-      infoWindow: InfoWindow(title: 'Petscan'),
+      position: const LatLng(22.98443, 88.43602),
+      infoWindow: const InfoWindow(title: 'Petscan'),
     ),
     Marker(
-      markerId: MarkerId('4'),
+      markerId: const MarkerId('4'),
       icon: BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueBlue),
-      position: LatLng(22.98443, 88.43602),
-      infoWindow: InfoWindow(title: 'Uttasoumita Vet Clinic'),
+      position: const LatLng(22.98443, 88.43602),
+      infoWindow: const InfoWindow(title: 'Uttasoumita Vet Clinic'),
     ),
     Marker(
-      markerId: MarkerId('5'),
+      markerId: const MarkerId('5'),
       icon: BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueBlue),
-      position: LatLng(22.89346, 88.37444),
-      infoWindow: InfoWindow(title: 'Antarik Vet Clinic'),
+      position: const LatLng(22.89346, 88.37444),
+      infoWindow: const InfoWindow(title: 'Antarik Vet Clinic'),
     ),
     Marker(
-      markerId: MarkerId('6'),
+      markerId: const MarkerId('6'),
       icon: BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueBlue),
-      position: LatLng(22.89346, 88.37444),
-      infoWindow: InfoWindow(title: 'Pritam Kumar sinha Vet Clinic'),
+      position: const LatLng(22.89346, 88.37444),
+      infoWindow: const InfoWindow(title: 'Pritam Kumar sinha Vet Clinic'),
     ),
   ];
 
@@ -84,9 +84,9 @@ class _MapScreenState extends State<MapScreen> {
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white.withOpacity(0.7),
-                    shape: CircleBorder(),
+                    shape: const CircleBorder(),
                   ),
-                  child: Icon(
+                  child: const Icon(
                     Icons.arrow_back,
                     size: 50,
                     color: Colors.white,
@@ -110,9 +110,9 @@ class _MapScreenState extends State<MapScreen> {
                   onPressed: () async {
                     getUserCurrentLocation().then((value) async {
                       _markers.add(Marker(
-                        markerId: MarkerId('1'),
+                        markerId: const MarkerId('1'),
                         position: LatLng(value.latitude, value.longitude),
-                        infoWindow: InfoWindow(title: 'Your Location'),
+                        infoWindow: const InfoWindow(title: 'Your Location'),
                       ));
                       CameraPosition currentPosi = CameraPosition(
                         target: LatLng(value.latitude, value.longitude),
@@ -142,9 +142,9 @@ class _MapScreenState extends State<MapScreen> {
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white.withOpacity(0.7),
-                    shape: CircleBorder(),
+                    shape: const CircleBorder(),
                   ),
-                  child: Icon(
+                  child: const Icon(
                     Icons.arrow_back,
                     size: 50,
                     color: Colors.white,
