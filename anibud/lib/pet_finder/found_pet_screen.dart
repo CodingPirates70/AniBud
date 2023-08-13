@@ -14,20 +14,21 @@ class PetFoundScreen extends StatefulWidget {
 
 class _PetFoundScreenState extends State<PetFoundScreen> {
   bool loading = false;
-  int? founded_counter;
+  int founded_counter = 0;
 
-  Future<void> updateCounter() async {
-    await firestore
-        .collection("founded_conter")
-        .doc("counter")
-        .set({"counts": founded_counter});
-  }
+  // Future<void> updateCounter() async {
+  //   await firestore
+  //       .collection("founded_conter")
+  //       .doc("counter")
+  //       .set({"counts": founded_counter});
+  // }
 
-  Future<void> getCounter() async {
-    var snapshot =
-        (firestore.collection("founded_counter").doc("counter").snapshots());
-    founded_counter = snapshot as int?;
-  }
+  // Future<void> getCounter() async {
+  //   var snapshot =
+  //       (firestore.collection("founded_counter").doc("counter").snapshots());
+  //   founded_counter = snapshot as int?;
+  //   print(founded_counter);
+  // }
 
   Future<void> uploadFoundedImage(String inputSource) async {
     final picker = ImagePicker();
@@ -39,8 +40,7 @@ class _PetFoundScreenState extends State<PetFoundScreen> {
       // ignore: avoid_returning_null_for_void
       return null;
     } else {
-      founded_counter;
-      updateCounter();
+      founded_counter++;
     }
 
     String fileName = pickedImage.name;
