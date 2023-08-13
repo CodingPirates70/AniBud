@@ -1,7 +1,10 @@
 // ignore: file_names
+import 'package:anibud_ui/Report/NearestPoliceStat.dart';
 import 'package:anibud_ui/Vet_Hospitals/PetoptionScreen.dart';
 import 'package:anibud_ui/pet_finder/pet_finder_screen.dart';
 import 'package:flutter/material.dart';
+
+import 'donation/DonationAmount.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -90,7 +93,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                         'VET HOSPITALS',
                                         style: TextStyle(
                                             color: Colors.white,
-                                            fontSize: 23,
+                                            fontSize: 20,
                                             fontWeight: FontWeight.w900),
                                       ),
                                       Text(
@@ -151,7 +154,14 @@ class _HomeScreenState extends State<HomeScreen> {
                       child: Stack(
                         children: [
                           ElevatedButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => MapScreen2(
+                                            title: 'map',
+                                          )));
+                            },
                             style: ElevatedButton.styleFrom(
                               backgroundColor: const Color(0xFFEDBC3F),
                             ),
@@ -195,7 +205,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 ),
                                 child: const Image(
                                   image: AssetImage(
-                                    'assets/images/VethHospital.png',
+                                    'assets/images/2nd.png',
                                   ),
                                   fit: BoxFit.scaleDown,
                                 )),
@@ -241,7 +251,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             style: ElevatedButton.styleFrom(
                               backgroundColor: const Color(0xFF32BB53),
                             ),
-                            child: const Row(
+                            child: Row(
                               children: [
                                 Padding(
                                   padding: EdgeInsets.only(top: 28.0),
@@ -251,7 +261,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                         'FIND YOU PET',
                                         style: TextStyle(
                                             color: Colors.white,
-                                            fontSize: 23,
+                                            fontSize: 20,
                                             fontWeight: FontWeight.w900),
                                       ),
                                       Text(
@@ -312,7 +322,14 @@ class _HomeScreenState extends State<HomeScreen> {
                       child: Stack(
                         children: [
                           ElevatedButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => DonationAmount(),
+                                ),
+                              );
+                            },
                             style: ElevatedButton.styleFrom(
                               backgroundColor: const Color(0xFFEDBC3F),
                             ),
@@ -321,7 +338,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 SizedBox(
                                   width: w / 3.3,
                                 ),
-                                const Padding(
+                                Padding(
                                   padding: EdgeInsets.only(top: 25.0),
                                   child: Column(
                                     children: [
@@ -329,11 +346,11 @@ class _HomeScreenState extends State<HomeScreen> {
                                         'DONATION',
                                         style: TextStyle(
                                             color: Colors.white,
-                                            fontSize: 25,
+                                            fontSize: 20,
                                             fontWeight: FontWeight.w900),
                                       ),
                                       Text(
-                                        'Donate for needy animals',
+                                        'Donate for needy \nanimals',
                                         style: TextStyle(
                                             color: Colors.white, fontSize: 12),
                                       )
