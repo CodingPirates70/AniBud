@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "982743142311",
+    "project_id": "anibud-c4f95",
+    "storage_bucket": "anibud-c4f95.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:982743142311:android:662783875e4902311fb082",
+        "android_client_info": {
+          "package_name": "com.codingpirates.anibud_ui"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "982743142311-8m1ljnol8vo0li6ajqq96dkaqv31bsq4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTtx-iMnGpXjMASE3ZyKFZNb6YbVBOgBU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "982743142311-8m1ljnol8vo0li6ajqq96dkaqv31bsq4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
